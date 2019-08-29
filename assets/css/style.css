@@ -107,7 +107,7 @@ form {
     padding-bottom: 20px;
 }
 
-.bar {
+.form {
     border-top: 1px solid #ccc;
     padding-top: 20px;
 }
@@ -116,11 +116,18 @@ input {
     border: 1px solid #cccccc;
     width: 100%;
     padding: 12px;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 #message {
     height: 100px;
+}
+
+#button {
+    color: white;
+    width: 100px;
+    background-color: #4aaaa5;
+    padding: 10px 15px;
 }
 
 
