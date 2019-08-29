@@ -15,9 +15,10 @@
     margin: 0 auto;
 }
 
-.name {
+#name {
     float: left;
     position: relative;
+    right: -15%;
     color: #ffffff;
     background-color: #4aaaa5;
     padding: 10px;
@@ -25,8 +26,9 @@
     width: 300px;
 }
 
-.links {
+#links {
     float: right; 
+    padding-top: 35px;
 }
 
 .light-grey {
@@ -37,10 +39,11 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #777;
-    width: 960px;
-    background: #ffffff;
     font-size: 18px;
+    color: #777;
+    width: 100%;
+    background: #ffffff;
+    padding: 0 10px;
     border: 2px solid #dddddd;
 }
 
@@ -48,7 +51,7 @@ header {
     border-color: #ccc;
 }
 
-h2 {
+h1 {
     color: #4aaaa5;
 }
 
