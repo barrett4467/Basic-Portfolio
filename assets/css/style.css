@@ -60,6 +60,15 @@ article {
     margin: 10px 10px 5px 10px;
 }
 
+form {
+    position: relative;
+    border-top: 1px solid #cccccc;
+    color: #777;
+    background: #ffffff;
+    padding: 20px;
+    margin: 10px 10px 5px 10px;
+}
+
 #box {
     float: left;
     padding: 10px;
@@ -98,9 +107,11 @@ header {
     border-color: #ccc;
 }
 
-h1 {
+h1, h2 {
     color: #4aaaa5;
+    font-size: 2em;
 }
+
 
 .footer {
     height: 50px;
