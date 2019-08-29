@@ -23,8 +23,19 @@
         </div>
     </header>
     <section>
-        <h1>Contact</h1>
-        <form>Name Email Message</form>
+        <form action="https://formspree.io/email@domain.tld" method="POST">
+
+            <h1 id='contact'>Contact</h1>
+            <div class="bar">
+                <h4>Name</h4>
+                <input type="text" name="Name" placeholder="Your name...">
+                <h4>Email</h4>
+                <input type="text" email="Email"placeholder="Email...">
+                <h4>Message</h4>
+                <input id='message' type="text" message="Message" placeholder="Message...">
+            </div>
+            <!-- Need to add submit button -->
+        </form>
 
     </section>
 </body>
