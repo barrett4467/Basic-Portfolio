@@ -104,22 +104,23 @@ article {
 
 
 p {
-    float: left;
     padding: 18px 10px 10px 0;
-    margin: 10px;
-    float: right;
     margin: 10px;
     width: 100%;
 
 }
 
 img {
-    /* float: left; */
+    float: left;
     position: relative;
-    left: 10px;
     top: 10px;
+    margin-right: 10px;
     max-width: 130px;
     max-height: 240px;
+}
+
+.image {
+    margin-right: 10px;
 }
 .para {
     /* float: right; */
