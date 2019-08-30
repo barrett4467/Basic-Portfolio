@@ -29,12 +29,22 @@ h1, h2 {
     color: #4aaaa5;
     font-size: 2em;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    border-bottom: 2px solid #dddddd;
+    border-bottom: 2px solid #ccc;
     margin-left: 10px;
 }
 
+.underline {
+    margin-top: 10px;
+}
+
 .content {
-    margin-top: 20px;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #cccccc;
+    color: #777;
+    background: #ffffff;
+    width: 75%;
 }
 
 
@@ -75,12 +85,11 @@ nav {
     width: 318px;
 }
 
+
 section{
-    /* column-count: 3; */
     color: #777777;
     background-image: url('../images/greyfloral.png');
     padding: 30px;
-    /* width: 960px; */
     border-top: 2px solid #cccccc;
 }
 
@@ -89,29 +98,31 @@ article {
     position: relative;
     border-top: 1px solid #cccccc;
     color: #777;
-    background: #ebebeb;
-    padding: 20px;
-    margin: 10px 10px 5px 10px;
-}
-
-.p1 {
-    right: 50px;
-    padding: 50px;
-}
-
-p {
-    padding: 10px 10px 10px 0;
-
-}
-
-.white-box {
-    position: relative;
-    border: 1px solid #cccccc;
-    color: #777;
     background: #ffffff;
     padding: 20px;
-    width: 75%;
-    margin: 0 auto;
+}
+
+
+p {
+    padding: 18px 10px 10px 0;
+    margin: 10px;
+        float: right;
+    margin: 10px;
+    width: 100%;
+
+}
+
+img {
+    float: left;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    max-width: 130px;
+    max-height: 240px;
+}
+.para {
+    float: right;
+    width: 100%;
 }
 
 .portfolio-wb {
@@ -133,27 +144,25 @@ p {
     background-image: url(http://lorempixel.com/200/150);
 }
 
-#row-1 {
+.row-1 {
     position: absolute;
+    margin-top: 20px;
 }
 
 #hangman, #trivia {
     float: left;
 }
 
-#rock{
-    position: absolute;
-    top: 59%;
-    float: left;
-}
-
 #rpg {
-    float: right;
+    position: absolute;
+    right: 30%;
 }
 
 #trivia {
     position: absolute;
+    top: 10%;
     top: 34%;
+    padding-top: 10px;
 } 
 
 #rut {
@@ -162,19 +171,27 @@ p {
     right: 30%;
 }
 
-#row-2 {
+/* .row-3 {
     position: absolute;
-    right: 30%;
-    top: 15%; 
+    bottom: 10%;
+} */
+#rock {
+    position: absolute;
+    top: 59%;
+    float: left;
 }
 
+
 #contact {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .form {
     border-top: 1px solid #ccc;
-    padding-top: 20px;
+}
+
+#contact-form {
+    padding: 20px;
 }
 
 input {
@@ -210,28 +227,33 @@ input {
     float: left;
     position: absolute;
     width: 200px;
-    right: 10px;
-    bottom: 10px;
+    right: 196px;
+    top: 157px;
     background-color: #4aaaa5;
     padding: 15px;
     color: #ffffff;
 }
 
-/* .content {
-    position: relative;
-    border-top: 1px solid #cccccc;
-    color: #777;
-    background: #ebebeb;
-    padding: 20px;
-    margin: 10px 10px 5px 10px;
-} */
+/* This doesn't work right but I attempted the sticky footer */
+.entire {
+    min-height: 100%;
+} 
+
+.entire::after {
+    content: ""
+    display: block;
+    margin-bottom: -50px;
+}
+
+footer, .page-entire::after {
+    height: 50px;
+} 
 
 .footer {
-    height: 50px;
     padding: 25px;
     text-align: center;
     font-size: 10px;
     color: #ffffff;
     background-color: #666666;
     border-top: 8px solid #4aaaa5;
-} 
+}
