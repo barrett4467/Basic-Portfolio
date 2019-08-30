@@ -30,6 +30,7 @@ h1, h2 {
     font-size: 2em;
     font-family: 'Georgia', Times, Times New Roman, serif;
     border-bottom: 2px solid #dddddd;
+    margin-left: 10px;
 }
 
 .content {
@@ -70,7 +71,7 @@ nav {
     background-color: #4aaaa5;
     padding: 10px;
     border-bottom: none;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
     width: 318px;
 }
 
@@ -129,18 +130,36 @@ p {
     background: #ebebeb;
     height: 150px;
     width: 200px;
+    background-image: url(http://lorempixel.com/200/150);
 }
 
 #row-1 {
     position: absolute;
 }
 
-#hangman, #trivia, #rock {
+#hangman, #trivia {
     float: left;
 }
 
-#rpg, #rut {
+#rock{
+    position: absolute;
+    top: 59%;
+    float: left;
+}
+
+#rpg {
     float: right;
+}
+
+#trivia {
+    position: absolute;
+    top: 34%;
+} 
+
+#rut {
+    position: absolute;
+    top: 34%;
+    right: 30%;
 }
 
 #row-2 {
@@ -148,29 +167,6 @@ p {
     right: 30%;
     top: 15%; 
 }
-
-#row-3 {
-
-}
-
- 
-#trivia {
-    position: absolute;
-    top: 34%;
-
-} 
-
- #rutgers {
-    position: absolute;
-    top: 34%;
-    right: 30%;
-}
-
-#rock{
-    position: absolute;
-    top: 59%;
-}
-
 
 #contact {
     padding-bottom: 20px;
@@ -199,6 +195,27 @@ input {
     padding: 10px 15px;
 }
 
+.blue-bar {
+    float: left;
+    position: absolute;
+    width: 200px;
+    right: 0%;
+    bottom: 5px;
+    background-color: #4aaaa5;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.blue-bar-rpg {
+    float: left;
+    position: absolute;
+    width: 200px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #4aaaa5;
+    padding: 15px;
+    color: #ffffff;
+}
 
 /* .content {
     position: relative;
